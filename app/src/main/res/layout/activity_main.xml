@@ -52,7 +52,8 @@
                     android:id="@+id/comView"
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
-                    android:scaleType="centerInside" />
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cat"/>
 
             </LinearLayout>
 
