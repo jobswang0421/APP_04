@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 在setContentView之后获取视图引用
         val comView = findViewById<ImageView>(R.id.comView)
         val txtResult = findViewById<TextView>(R.id.txtResult)
         val btnScissors = findViewById<ImageButton>(R.id.btnScissor)
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         btnPaper.setOnClickListener {
             var iComPlay =20
             iComPlay = Random.nextInt(1, 101)
-            txtResult.setText("") // 清空结果文本
+            txtResult.setText("")
             comView.setImageResource(android.R.color.transparent)
             when (iComPlay) {
                 in 71..100 -> {
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         btnScissors.setOnClickListener {
             var iComPlay =20
             iComPlay = Random.nextInt(1, 101)
-            txtResult.setText("") // 清空结果文本
+            txtResult.setText("")
             comView.setImageResource(android.R.color.transparent)
             when (iComPlay) {
                 in 71..100 -> {
@@ -62,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         btnStone.setOnClickListener {
             var iComPlay =20
             iComPlay = Random.nextInt(1, 101)
-            txtResult.setText("") // 清空结果文本
+            txtResult.setText("")
             comView.setImageResource(android.R.color.transparent)
             when (iComPlay) {
                 in 71..100 -> {
